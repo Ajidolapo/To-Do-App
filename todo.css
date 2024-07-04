@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+  body {
+   background-color: #334569;
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+   
+  #container {
+    background: #dfd8dd;
+    padding: 25px;
+    width: 550px;
+    border-radius: 10px;
+    margin-top: 100px;
+    /* align-items: center;
+    justify-content: center; */
+  }
+
+  #header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-left: 5px;
+    justify-content: center;
+  }
+
+   #task {
+    display: inline;
+    align-items: center;
+    justify-content: space-between;
+     background: #edeef0;
+    border-radius: 40px;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    outline: hidden;
+    width: 100%;
+  } 
+
+  
+#add {
+    cursor: pointer;
+    border-radius: 35px; 
+    height: 50px;
+    width: 50px;
+    /* padding: 15px; */
+    display: inline;
+    /* background: rgb(50, 76, 205); */
+}    
+
+
+ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     border: 1px solid #ccc;
+    border-radius: 4px; 
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color:#edeef0;
+    cursor: pointer;
+    list-style: none;
+    user-select: none;
+    padding: 10px;
+}
+.todo-btns {
+    cursor: pointer;
+    border-radius: 40px; 
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+}
+.edit-btn{
+  cursor: pointer;
+  border-radius: 40px; 
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+}
+.delAll {
+  cursor: pointer;
+  border-radius: 10px; 
+  height: 30px;
+  width: 100px;
+  padding: 5px;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #334569;
+  border: #334569;
+  margin-top: 20px;
+}
+
+.checked-todo {
+  cursor: auto;
+  border-radius: 40px; 
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.toggleMe {
+    animation: hideMe 5s forwards;
+  }
+  @keyframes hideMe {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  #todo-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin-bottom: 20px;
+  }
+  
